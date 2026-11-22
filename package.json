@@ -1,0 +1,17 @@
+{
+  "name": "hoops-rooms",
+  "version": "1.0.0",
+  "description": "Self-hosted Flick Hoops for two to four: the phones play the ball, the server keeps the clock, the scores and the streaks.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/rules.js && node test/gear.js && node test/flow.js && node test/roomcode.js && node test/plus.js && node test/moderation.js && TEST_PORT3=5595 node test/reactions.js && node test/voice.js && node test/friendsplayed.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.3"
+  }
+}
